@@ -1,0 +1,61 @@
+baseURL = "https://blog.datendenken.de/"
+title = "datendenken"
+languageCode = "de-de"
+defaultContentLanguage = "de-de"
+enableEmoji = true
+theme = "hugo-blog-awesome"
+ignoreErrors = ["additional-script-loading-error"]
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+
+[[menu.main]]
+  pageRef = "/"
+  name = "Startseite"
+  url = "/"
+  weight = 10
+[[menu.main]]
+  pageRef = "posts"
+  name = "Beiträge"
+  url = "/posts/"
+  weight = 20
+[[menu.main]]
+  pageRef = "about"
+  name = "Über"
+  url = "/about/"
+  weight = 30
+
+[params]
+  sitename = "datendenken"
+  defaultColor = "auto"
+  description = "Blog über Daten, Code und was sonst so anfällt."
+  mainSections = ["posts"]
+  toc = true
+  tocOpen = false
+  goToTop = true
+  dateFormat = "2. January 2006"
+  rssFeedDescription = "summary"
+
+[params.author]
+  avatar = "avatar.jpg"
+  intro = "datendenken"
+  name = "Fabian"
+  description = ""
+
+[params.webmanifest]
+  name = "sitename"
+  short_name = "sitename"
+  start_url = "/"
+  theme_color = "#434648"
+  display = "standalone"
+
+[[params.socialIcons]]
+  name = "Rss"
+  url = "/index.xml"
